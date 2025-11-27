@@ -1,0 +1,143 @@
+import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+    container: {
+        width: 300,
+        backgroundColor: '#ffffff',
+        paddingVertical: 28,
+        paddingHorizontal: 16,
+        borderRightWidth: 0,
+        justifyContent: 'flex-start',
+        // subtle card shadow
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.06,
+        shadowRadius: 8,
+        elevation: 6,
+    },
+    logoContainer: {
+        height: 80,
+        marginBottom: 24,
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        paddingLeft: 6,
+        borderBottomWidth: 1,
+        borderBottomColor: '#e5e7eb',
+        paddingBottom: 16,
+    },
+    logoText: {
+        fontWeight: '700',
+        color: '#0b3b60',
+        fontSize: 18,
+        marginBottom: 2,
+    },
+    logoSubtext: {
+        fontWeight: '400',
+        color: '#6b7280',
+        fontSize: 11,
+        textTransform: 'uppercase',
+        letterSpacing: 0.5,
+    },
+    menuItemsContainer: {
+        flex: 1,
+    },
+    menuItem: {
+        paddingVertical: 14,
+        paddingHorizontal: 14,
+        borderRadius: 10,
+        marginBottom: 6,
+        flexDirection: 'row',
+        alignItems: 'center',
+        position: 'relative',
+        transition: 'all 0.2s ease',
+    },
+    menuItemIcon: {
+        fontSize: 18,
+        marginRight: 12,
+        width: 24,
+        textAlign: 'center',
+    },
+    menuItemPressed: {
+        backgroundColor: '#eef6ff',
+        position: 'relative',
+    },
+    menuItemPressedBar: {
+        position: 'absolute',
+        right: -15,
+        top: 0,
+        bottom: 0,
+        width: 20,
+        backgroundColor: '#e9f1fb',
+        borderTopRightRadius: 4,
+        borderBottomRightRadius: 4,
+    },
+    menuItemActive: {
+        backgroundColor: '#07305a',
+        position: 'relative',
+        // slightly stronger elevation for active
+        shadowColor: '#07305a',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.12,
+        shadowRadius: 6,
+        elevation: 2,
+    },
+    menuItemActiveBar: {
+        position: 'absolute',
+        right: -15,
+        top: 0,
+        bottom: 0,
+        width: 20,
+        backgroundColor: '#07305a',
+        borderTopRightRadius: 4,
+        borderBottomRightRadius: 4,
+    },
+    menuItemLabel: {
+        fontSize: 15,
+        color: '#374151',
+        fontWeight: '500',
+    },
+    menuItemLabelActive: {
+        color: '#fff',
+        fontWeight: '600',
+    },
+    profile: {
+        marginTop: 'auto',
+        paddingTop: 20,
+        borderTopWidth: 1,
+        borderTopColor: '#e5e7eb',
+        paddingLeft: 6,
+        paddingBottom: 16,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    profileAvatar: {
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        backgroundColor: '#07305a',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginRight: 12,
+    },
+    profileAvatarText: {
+        color: '#fff',
+        fontWeight: '700',
+        fontSize: 14,
+    },
+    profileInfo: {
+        flex: 1,
+    },
+    profileName: {
+        color: '#111827',
+        fontWeight: '600',
+        fontSize: 14,
+        marginBottom: 2,
+    },
+    profileRole: {
+        color: '#6b7280',
+        fontSize: 12,
+        fontWeight: '400',
+    },
+});
+
+export default styles;

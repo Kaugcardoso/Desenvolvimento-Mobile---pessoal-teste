@@ -1,0 +1,31 @@
+{
+  "name": "projeto_kaugcardoso-backend",
+  "version": "1.0.0",
+  "description": "API Express + Postgres para o app de estoque",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "node --check index.js",
+    "migrate:valor": "node scripts/migrate-add-valor.js",
+    "migrate:custo": "node scripts/migrate-add-custo.js",
+    "migrate:complete": "node scripts/migrate-complete.js",
+    "verify": "node scripts/verify-setup.js",
+    "test:estoque": "node scripts/test-estoque-api.js",
+    "debug:estoque": "node scripts/debug-estoque.js",
+    "seed:teste": "node scripts/cadastrar-produto-teste.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

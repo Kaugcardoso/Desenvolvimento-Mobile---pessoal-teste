@@ -1,0 +1,41 @@
+import 'dotenv/config';
+
+export default {
+  expo: {
+    name: 'aulaBase',
+    slug: 'aulaBase',
+    version: '1.0.0',
+    orientation: 'portrait',
+    icon: './assets/icon.png',
+    userInterfaceStyle: 'light',
+    newArchEnabled: true,
+    splash: {
+      image: './assets/splash-icon.png',
+      resizeMode: 'contain',
+      backgroundColor: '#ffffff',
+    },
+    ios: {
+      supportsTablet: true,
+    },
+    android: {
+      adaptiveIcon: {
+        foregroundImage: './assets/adaptive-icon.png',
+        backgroundColor: '#ffffff',
+      },
+      edgeToEdgeEnabled: true,
+      package: 'com.kaugcardoso.aulaBase',
+    },
+    web: {
+      favicon: './assets/favicon.png',
+    },
+    extra: {
+      eas: {
+        projectId: '4a021eb8-194d-4866-bcd1-a16032043708',
+      },
+      // Variáveis de ambiente acessíveis no app
+      apiUrl: process.env.EXPO_PUBLIC_API_URL || 'http://localhost:3000',
+      useMocks: process.env.EXPO_PUBLIC_USE_MOCKS === 'true',
+    },
+  },
+};
+
